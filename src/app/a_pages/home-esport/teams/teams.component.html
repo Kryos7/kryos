@@ -1,0 +1,37 @@
+<!-- <ng-container *ngIf="TeamsResult">
+  <div class="teamPage">
+    <div class="col-sm-12 col-md-6 teamCntr float-left" *ngFor="let Team of TeamsResult">
+
+      <div class="logoCntr col-sm-12 col-md-4 float-left">
+        <div class="logo" [ngStyle]="{'background-image': 'url(assets/images/logos/nologo.png)'}" *ngIf="!Team.Logo"></div>
+        <div class="logo" [ngStyle]="{'background-image': 'url('+ Team.Logo +')'}" *ngIf="Team.Logo"></div>
+      </div>
+
+      <div class="col-sm-12 col-md-8 float-left teamTextCntr">
+
+        <h3>{{Team.Name}}</h3>
+
+        <div class="col-sm-12 col-md-6 pl-0 pr-0 float-left playerRow" *ngFor="let Player of Team.Members">
+
+          <div class="playerName float-left" [ngClass]="{'leader': Player.IsLeader}">
+            {{Player.Battletag}}
+          </div>
+          <div class="playerRank float-right">
+
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/bronze.png)'}" *ngIf="Player.Rank == 'Bronzo'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/silver.png)'}" *ngIf="Player.Rank == 'Argento'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/gold.png)'}" *ngIf="Player.Rank == 'Oro'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/platinum.png)'}" *ngIf="Player.Rank == 'Platino'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/diamond.png)'}" *ngIf="Player.Rank == 'Diamante'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/master.png)'}" *ngIf="Player.Rank == 'Master'"></div>
+            <div class="rankImg" [ngStyle]="{'background-image': 'url(assets/images/heroes/ranks/grandmaster.png)'}" *ngIf="Player.Rank == 'Gran Master'"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</ng-container> -->

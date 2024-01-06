@@ -1,0 +1,8 @@
+{
+  "/limitless/*": {
+    "target": "https://play.limitlesstcg.com/api/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

@@ -1,0 +1,314 @@
+[
+    {
+        "Name": "1727",
+        "Logo": "",
+        "Members": [
+            {
+                "Battletag": "Chierico#21376",
+                "Rank": "Bronzo",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Zampakuto#21180",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Alucard#26748",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "IlFesso#2523",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Halflight#21599",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Bottediferro#2637",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "ILiox#2911",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "GNAGNA#21732",
+                "Rank": "Bronzo",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "BANDABAM",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_bandabam.jpg",
+        "Members": [
+            {
+                "Battletag": "FrancisBamba#2463",
+                "Rank": "Master",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Gipate#2284",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Galaxy#2614",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Aniu#2228",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "APO#21170",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "StendoRaglie#2982",
+                "Rank": "Oro",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "BIOPARCO",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_bioparco.jpg",
+        "Members": [
+            {
+                "Battletag": "Bauna#21806",
+                "Rank": "Master",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Lonza#2467",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Klank#2131",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "yubes#21203",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "patonz#2967",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "hyperloris#21245",
+                "Rank": "Oro",
+                "IsLeader": false
+            }
+        ]
+    },{
+        "Name": "ExtraEquo",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_extraequo.jpg",
+        "Members": [
+            {
+                "Battletag": "Se6ForteSali#21899",
+                "Rank": "Master",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Cesc#2901",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Moldavius#2358",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Duridlol#2795",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Buya#2923",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "AlexIt#21848",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Pellicanosh#2479",
+                "Rank": "Master",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "HELLO WORLD",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_helloworld.png",
+        "Members": [
+            {
+                "Battletag": "fede6018#2861",
+                "Rank": "Diamante",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Samuel#23157",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Lyshan#2225",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Balz#21651",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Ragnar#25347",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Lìbanèse#2475",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Jealous#2116",
+                "Rank": "Platino",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "LtFasso#2108",
+                "Rank": "Oro",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "L.O.L.Y.",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_loly.png",
+        "Members": [
+            {
+                "Battletag": "Xenostrasza#2472",
+                "Rank": "Master",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "AgCooper#2285",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Dicius#2561",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Gen#21827",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "MadlyGian#2654",
+                "Rank": "Master",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Yuki#4581",
+                "Rank": "Master",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "Regular Players",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_regularplayers.jpg",
+        "Members": [
+            {
+                "Battletag": "Rollo#2302",
+                "Rank": "Diamante",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Gilbert#2340",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Srymybad#2179",
+                "Rank": "Platino",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Spartans#21443",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Milton15#2619",
+                "Rank": "Oro",
+                "IsLeader": false
+            }
+        ]
+    },
+    {
+        "Name": "TEAM FIGHTAREEEE!",
+        "Logo": "assets/images/heroes/nexusconflict/nc_s1_c2_teamfightareee.jpg",
+        "Members": [
+            {
+                "Battletag": "Jollytroller#2178",
+                "Rank": "Oro",
+                "IsLeader": true
+            },
+            {
+                "Battletag": "Mithril#2303",
+                "Rank": "Diamante",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Hurin#2966",
+                "Rank": "Argento",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Zamboqdb#2394",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "Chacha35g#2603",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "DnA6#2962",
+                "Rank": "Oro",
+                "IsLeader": false
+            },
+            {
+                "Battletag": "stiano#2959",
+                "Rank": "Oro",
+                "IsLeader": false
+            }
+        ]
+    }
+]

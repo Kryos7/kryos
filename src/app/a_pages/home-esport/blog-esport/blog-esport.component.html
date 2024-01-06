@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-12 col-sm col-md col-lg">
+
+    <ng-container *ngFor="let BlogData of BlogResult">
+
+      <div class="blogCntr col-sm-12 col-md-3 float-left">
+        <div class="blogImage" [ngStyle]="{'background-image': 'url('+ BlogData.CoverImage +')'}"></div>
+        <div class="blogNewsCntr">
+          <div class="blogTitle">{{BlogData.Title}}</div>
+          <div class="blogDate">{{BlogData.Date}} - {{BlogData.Author}}</div>
+          <div class="blogText">{{BlogData.Text}}</div>
+          <div class="btnCntr">
+            <a class="eloBtn">LEGGI TUTTO</a>
+          </div>
+        </div>
+      </div>
+
+    </ng-container>
+
+  </div>
+</div>

@@ -1,0 +1,65 @@
+.footerCntr {
+    float            : left;
+    background-image : url('../../../assets/images/backgrounds/blackTransparentBg.png');
+    background-repeat: repeat;
+    color            : #FFFFFF;
+    width            : 100%;
+    height           : 275px;
+    margin-bottom    : 15px;
+
+    div {
+        float: left;
+    }
+
+    .footerBox {
+        margin-top: 25px;
+
+        h2 {
+            text-align: center;
+        }
+
+        a {
+            color      : #FFFFFF;
+            font-weight: bold;
+            &:hover{
+                color: var(--elo-orange);
+            }
+        }
+
+        .footerLink {
+            margin-top: 15px;
+            width     : 100%;
+            text-align: center;
+
+        }
+
+        .footerSocialsCntr {
+            width     : 100%;
+            text-align: center;
+
+            .footerSocials {
+                margin: 15px auto 0;
+                float : none;
+
+                fa-icon {
+                    font-size   : 24px;
+                    margin-right: 20px;
+                    &:hover{
+                        color: var(--elo-orange);
+                    }
+                }
+
+                a:last-child fa-icon {
+                    margin-right: 0px;
+                }
+
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 25px;
+    }
+
+
+}

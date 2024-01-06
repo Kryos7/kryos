@@ -1,0 +1,129 @@
+<div class="menuEsportCntr">
+
+  <ng-container *ngIf="eloService.heroesLayout">
+
+    <mat-toolbar class="menuEsportCntr heroes generalRules">
+      <mat-toolbar-row>
+
+        <h1>
+          <a [routerLink]="['/heroes']">
+            <img src="../../../assets/images/logos/logo-heroes.png" alt="Logo Heroes" />
+          </a>
+        </h1>
+
+        <!-- BREADCRUMBS -->
+        <xng-breadcrumb separator=" ">
+
+          <ng-container *xngBreadcrumbItem="let breadcrumb; let info = info; let first = first">
+
+            <ng-container *ngIf="info">
+              <fa-icon [icon]="faAngleRight" class="breadcrumbArrow">{{ info }}</fa-icon>
+            </ng-container>
+
+            <ng-container *ngIf="!first">
+
+              <div class="breadcrumbCntr">
+                <ng-container *ngIf="currentEvent">
+                  <div class="topBreadcrumb">{{ currentEvent }}</div>
+                </ng-container>
+                <div class="bottomBreadcrumb">{{ breadcrumb }}</div>
+              </div>
+
+            </ng-container>
+
+          </ng-container>
+
+        </xng-breadcrumb>
+        <!-- !BREADCRUMBS -->
+
+        <span class="menu-spacer"></span>
+        <div class="menuCntr">
+          <div class="menuSecondaryCntr">
+
+            <div class="submenuCntr">
+              <a class="hasSubmenu" mat-button [routerLink]="'/'"> Weekly Cup </a>
+              <div class="submenu">
+                <a [routerLink]="['regolamento', 'nexus-conflict']" class="col-12">
+                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento
+                </a>
+                <a [routerLink]="['squadre', 'nexus-conflict']" class="col-12">
+                  <fa-icon [icon]="faUsers"></fa-icon> Sala dei Re
+                </a>
+                <a [routerLink]="['edizioni-passate', 'nexus-conflict']" class="col-12">
+                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate
+                </a>
+              </div>
+            </div>
+
+            <div class="submenuCntr">
+              <a class="hasSubmenu" mat-button [routerLink]="'/'"> Team League </a>
+              <div class="submenu">
+                <a [routerLink]="['regolamento', 'elo-championship-heroes']" class="col-12">
+                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento
+                </a>
+                <a [routerLink]="['classifica', 'elo-championship-heroes']" class="col-12">
+                  <fa-icon [icon]="faTable"></fa-icon> Classifica
+                </a>
+                <a [routerLink]="['squadre', 'elo-championship-heroes']" class="col-12">
+                  <fa-icon [icon]="faUsers"></fa-icon> Squadre
+                </a>
+                <a [routerLink]="['edizioni-passate', 'elo-championship-heroes']" class="col-12">
+                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate
+                </a>
+              </div>
+            </div>
+
+            <!-- <a mat-button [routerLink]="['iscriviti']"> Iscriviti </a> -->
+          </div>
+        </div>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+  </ng-container>
+
+  <ng-container *ngIf="eloService.magicLayout">
+
+    <mat-toolbar class="menuEsportCntr magic generalRules">
+      <mat-toolbar-row>
+        <h1>
+          <a [routerLink]="['/magic']">
+            <img src="../../../assets/images/logos/logo-magic.png" alt="Logo Magic" />
+          </a>
+        </h1>
+        <span class="menu-spacer"></span>
+        <div class="menuCntr">
+          <a mat-button [routerLink]="'/'"> A </a>
+          <a mat-button [routerLink]="'/'"> B </a>
+          <a mat-button [routerLink]="'/'"> C </a>
+          <a mat-button [routerLink]="'/'"> D </a>
+        </div>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+  </ng-container>
+
+  <ng-container *ngIf="eloService.lolLayout">
+
+    <mat-toolbar class="menuEsportCntr lol generalRules">
+      <mat-toolbar-row>
+        <h1>
+          <a [routerLink]="['/lol']">
+            <img src="../../../assets/images/logos/logo-lol.png" alt="Logo Heroes" />
+          </a>
+        </h1>
+        <span class="menu-spacer"></span>
+        <div class="menuCntr">
+          <a mat-button [routerLink]="'/'"> E </a>
+          <a mat-button [routerLink]="'/'"> F </a>
+          <a mat-button [routerLink]="'/'"> G </a>
+          <a mat-button [routerLink]="'/'"> H </a>
+        </div>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+  </ng-container>
+
+</div>

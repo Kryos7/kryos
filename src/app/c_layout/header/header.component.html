@@ -1,0 +1,37 @@
+<mat-toolbar class="generalRules">
+  <mat-toolbar-row>
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <h1>
+      <a [routerLink]="['/home']">
+        <img src="../../../assets/images/logos/logo-kryos-small.png" alt="Logo Kryos" />
+      </a>
+    </h1>
+    <span class="menu-spacer"></span>
+    <div class="menuCntr">
+      <!-- <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a> -->
+      <div class="socials">
+        <a mat-button [routerLink]="['/']">
+          <fa-icon [icon]="faFacebook"></fa-icon>
+        </a>
+        <a mat-button [routerLink]="['/']">
+          <fa-icon [icon]="faInstagram"></fa-icon>
+        </a>
+        <a mat-button [routerLink]="['/']">
+          <fa-icon [icon]="faYoutube"></fa-icon>
+        </a>
+        <a mat-button [routerLink]="['/']">
+          <fa-icon [icon]="faTwitch"></fa-icon>
+        </a>
+        <a mat-button [routerLink]="['/']">
+          <fa-icon [icon]="faDiscord"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

@@ -1,0 +1,28 @@
+::ng-deep .signupFormCntr {
+    background-image : url('../../../assets/images/backgrounds/blackTransparentBg.png');
+    background-repeat: repeat;
+    width            : 100%;
+    color            : #FFFFFF;
+    padding: 30px;
+
+    /*Colore testo input*/
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+        color  : #FFFFFF;
+        opacity: 0.42;
+    }
+
+    /*Colore riga sotto le input*/
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+        background-color  : #FFFFFF;
+        opacity: 0.42;
+    }
+
+    .mat-select-value, .mat-select-arrow{
+        color  : #FFFFFF;
+    }
+
+}
+
+.firstCol .row{
+    height: 80px;
+}

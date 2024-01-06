@@ -1,0 +1,16 @@
+<section class="esportHomeCntr"
+  [ngClass]="{'heroes': eloService.heroesLayout, 'magic': eloService.magicLayout, 'lol': eloService.lolLayout }">
+
+  <div class="col-10 pl-0 float-left">
+    <app-menu-esport></app-menu-esport>
+    <div style="display: none;">
+      <!-- TODO wtf? se non lo ripeto qui non lo carica dentro menu esports -->
+      <xng-breadcrumb></xng-breadcrumb>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="col-2 pl-0 pr-0 float-left">
+    <app-sidebar></app-sidebar>
+  </div>
+
+</section>

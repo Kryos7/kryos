@@ -1,0 +1,315 @@
+<div class="signupFormCntr">
+
+  <form [formGroup]="formSignUp" autocomplete="off" (onSubmit)="submit()">
+
+    <div class="row">
+
+      <!-- COLONNA 1 -->
+      <div class="col-sm-12 col-lg-6 float-left firstCol">
+
+        <h1>Compila il form per iscriverti</h1>
+
+        <div class="row">
+
+          <mat-form-field class="col-6 float-left">
+            <mat-select matNativeControl required formControlName="InscriptionType" placeholder="Iscriviti come:"
+              (selectionChange)="setInscriptionType(($event.value))">
+              <mat-option *ngFor="let type of inscriptionTypes" [value]="type">
+                {{type}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="signUpToEventFormControls['InscriptionType'].hasError('required')">
+              Selezionare un <strong>evento</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="col-6 float-left">
+            <mat-select matNativeControl required formControlName="EventSelected" placeholder="Seleziona l'evento"
+              (selectionChange)="setEventDescription(($event.value))">
+              <mat-option *ngFor="let event of selectableEvents.TypeArray" [value]="event">
+                {{event.Name}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="signUpToEventFormControls['EventSelected'].hasError('required')">
+              Selezionare un <strong>evento</strong>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+
+        <ng-container *ngIf="inscriptionTeam && !inscriptionAgent">
+
+          <div class="row">
+
+            <mat-form-field class="col-4 float-left">
+              <input type="text" matInput placeholder="Nome della squadra" required formControlName="TeamName"
+                name="teamname" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['TeamName'].hasError('required')">
+                Inserire <strong>nome della squadra</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-2 float-left">
+              <mat-select matNativeControl formControlName="TeamSize" (selectionChange)="setTeamSize(($event.value))">
+                <mat-option *ngFor="let size of teamSizes" [value]="size">
+                  {{size}} membri
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <div class="logoUpload col-6 float-left">
+              <label for="singleFile">Carica il logo della squadra</label>
+              <input id="singleFile" type="file" [fileUploadInputFor]="FileUploadQueue" />
+            </div>
+
+            <mat-file-upload-queue #FileUploadQueue [fileAlias]="'file'"
+              [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'">
+
+              <mat-file-upload [file]="file" [id]="i" *ngFor="let file of FileUploadQueue.files; let i = index">
+              </mat-file-upload>
+            </mat-file-upload-queue>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-6 float-left">
+              <input type="text" matInput placeholder="Battletag capitano" required formControlName="LeaderName"
+                name="leadername" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['LeaderName'].hasError('required')">
+                Inserire <strong>battletag capitano ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-6 float-left">
+              <mat-select matNativeControl required formControlName="LeaderRank" placeholder="Rank capitano">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['LeaderRank'].hasError('required')">
+                Selezionare il <strong>rank del capitano</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-6 float-left">
+              <input type="text" matInput placeholder="Battletag giocatore 2" required formControlName="Player2Name"
+                name="player2" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['Player2Name'].hasError('required')">
+                Inserire <strong>battletag giocatore 2 ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-6 float-left">
+              <mat-select matNativeControl required formControlName="Player2Rank" placeholder="Rank giocatore 2">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['Player2Rank'].hasError('required')">
+                Selezionare il <strong>rank del giocatore 2</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-6 float-left">
+              <input type="text" matInput placeholder="Battletag giocatore 3" required formControlName="Player3Name"
+                name="player3" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['Player3Name'].hasError('required')">
+                Inserire <strong>battletag giocatore 3 ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-6 float-left">
+              <mat-select matNativeControl required formControlName="Player3Rank" placeholder="Rank giocatore 3">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['Player3Rank'].hasError('required')">
+                Selezionare il <strong>rank del giocatore 3</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-6 float-left">
+              <input type="text" matInput placeholder="Battletag giocatore 4" required formControlName="Player4Name"
+                name="player4" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['Player3Name'].hasError('required')">
+                Inserire <strong>battletag giocatore 4 ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-6 float-left">
+              <mat-select matNativeControl required formControlName="Player4Rank" placeholder="Rank giocatore 4">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['Player4Rank'].hasError('required')">
+                Selezionare il <strong>rank del giocatore 4</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-6 float-left">
+              <input type="text" matInput placeholder="Battletag giocatore 5" required formControlName="Player5Name"
+                name="player5" autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['Player5Name'].hasError('required')">
+                Inserire <strong>battletag giocatore 5 ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-6 float-left">
+              <mat-select matNativeControl required formControlName="Player5Rank" placeholder="Rank giocatore 5">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['Player5Rank'].hasError('required')">
+                Selezionare il <strong>rank del giocatore 5</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <!-- TEAM > 5 -->
+          <ng-container *ngIf="teamSizeSelected > 5">
+
+            <ng-container *ngFor="let i of [].constructor(teamSizeSelected)">
+
+              <div class="row">
+
+                <mat-form-field class="col-6 float-left">
+                  <input type="text" matInput placeholder="Battletag giocatore" required
+                    formControlName="PlayerName" name="player" autocomplete="none">
+                  <!-- <mat-error *ngIf="signUpToEventFormControls['PlayerName'].hasError('required')">
+                    Inserire <strong>battletag giocatore ( Nick#1234 )</strong>
+                  </mat-error> -->
+                </mat-form-field>
+
+                <mat-form-field class="col-6 float-left">
+                  <mat-select matNativeControl required formControlName="PlayerRank"
+                    placeholder="Rank giocatore">
+                    <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                      {{rank.Name}}
+                    </mat-option>
+                  </mat-select>
+                  <!-- <mat-error *ngIf="signUpToEventFormControls['PlayerRank'].hasError('required')">
+                    Selezionare il <strong>rank del giocatore</strong>
+                  </mat-error> -->
+                </mat-form-field>
+
+              </div>
+
+            </ng-container>
+
+          </ng-container>
+          <!-- END - TEAM > 5 -->
+
+        </ng-container>
+
+
+        <ng-container *ngIf="!inscriptionTeam && inscriptionAgent">
+
+          <div class="row">
+
+            <mat-form-field class="col-sm-6 float-left">
+              <input type="text" matInput placeholder="Battletag" required formControlName="AgentName" name="agentname"
+                autocomplete="none">
+              <mat-error *ngIf="signUpToEventFormControls['AgentName'].hasError('required')">
+                Inserire <strong>battletag ( Nick#1234 )</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-sm-6 float-left">
+              <mat-select matNativeControl required formControlName="AgentRank" placeholder="Rank attuale">
+                <mat-option *ngFor="let rank of rankHeroesList.RankArray" [value]="rank.Name">
+                  {{rank.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['AgentRank'].hasError('required')">
+                Selezionare il tuo <strong>rank</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </div>
+
+          <div class="row">
+
+            <mat-form-field class="col-sm-6 float-left">
+              <mat-select matNativeControl required formControlName="AgentRole1" placeholder="Ruolo principale">
+                <mat-option *ngFor="let role of roleHeroesList.RoleArray" [value]="role.Name">
+                  {{role.Name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="signUpToEventFormControls['AgentRole1'].hasError('required')">
+                Selezionare il tuo <strong>ruolo principale</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-sm-6 float-left">
+              <mat-select matNativeControl formControlName="AgentRole2" placeholder="Ruolo secondario">
+                <mat-option *ngFor="let role of roleHeroesList.RoleArray" [value]="role.Name">
+                  {{role.Name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          </div>
+
+        </ng-container>
+
+        <div class="row">
+
+          <mat-form-field class="col-sm-12">
+            <textarea type="text" matInput placeholder="Note" formControlName="Message" name="message"
+              autocomplete="none">
+              </textarea>
+          </mat-form-field>
+
+        </div>
+
+        <div class="row">
+
+          <button>
+
+            <a class="eloBtn">INVIA</a>
+
+          </button>
+
+        </div>
+
+
+      </div>
+      <!-- END - COLONNA 1 -->
+
+      <!-- COLONNA 2 -->
+      <div class="col-sm-12 col-lg-6 float-left">
+
+        <div class="eventDescr col-12">
+          <h1 *ngIf="eventDescription">Informazioni {{eventName}}</h1>
+          <div [innerHTML]="eventDescription"></div>
+        </div>
+
+      </div>
+      <!-- END - COLONNA 2 -->
+
+    </div>
+
+  </form>
+
+</div>

@@ -1,0 +1,22 @@
+<h1 style="text-align: center"> Kryos OP Pie Chart - AngularJS </h1>
+<section>
+  <form [formGroup]="form" style="display: flex" (submit)="submit()">
+    <div>
+      <label for="leader">Leader: </label>
+      <select id="leader" name="leader" formControlName="leader">
+        <option *ngFor="let option of leaders" [value]="option.code"> {{ option.label }} </option>
+      </select>
+    </div>
+    <div>
+      <label for="nUtilizzi">Utilizzi: </label>
+      <input type="number" id="nUtilizzi" name="nUtilizzi" formControlName="nUtilizzi">
+    </div>
+    <button type="submit">+</button>
+  </form>
+</section>
+<section style="display: flex">
+  <div style="margin: auto" id="chart"></div>
+</section>
+<section>
+  <pre>Selected:{{ selected | json}}</pre>
+</section>

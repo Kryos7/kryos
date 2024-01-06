@@ -1,0 +1,41 @@
+.homeCntr {
+    color: #FFFFFF;
+    width: 100%;
+    padding: 0;
+
+    .homeBox {
+        text-align: center;
+        float     : left;
+        
+        &:first-child{
+            padding-left: 0;
+        }
+        &:nth-child(2n+0){
+            padding: 0;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+
+        img {}
+
+    }
+
+    .homeImage{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 650px;
+    }
+
+
+    #homeBox1 .homeImage{
+        background-image : url('../../../assets/images/homeHeroes.jpg');
+    }
+    #homeBox2 .homeImage{
+        background-image : url('../../../assets/images/homeMagic.jpg');
+    }
+    #homeBox3 .homeImage{
+        background-image : url('../../../assets/images/homeLol.jpg');
+    }
+}

@@ -1,0 +1,46 @@
+.blogCntr {
+    padding-right: 0;
+
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    .blogImage {
+        height             : 250px;
+        width              : 100%;
+        background-size    : cover;
+        background-position: center;
+    }
+
+    .blogNewsCntr {
+        // background-image : url('../../../../assets/images/backgrounds/blueTransparentBg.png');
+        background-image : url('../../../../assets/images/backgrounds/blackTransparentBg.png');
+        background-repeat: repeat;
+        padding          : 15px;
+        color            : #FFFFFF;
+
+        .blogTitle {
+            font-weight: bold;
+        }
+
+        .blogDate {
+            margin    : 15px 0;
+            font-style: italic;
+        }
+
+        .blogText {
+            text-align        : justify;
+            overflow          : hidden;
+            text-overflow     : ellipsis;
+            display           : -webkit-box;
+            -webkit-line-clamp: 3;
+            /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+
+
+    }
+
+}
