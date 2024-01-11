@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, UntypedFormControl, Validators } from '@angular/forms';
 
 import { EventTypeExample } from 'src/app/e_core/classes/event-type-example';
 import { RankHeroesList } from 'src/app/e_core/classes/rank-heroes';
@@ -12,7 +12,7 @@ import { RoleHeroesList } from 'src/app/e_core/classes/role-heroes';
 })
 export class SignUpToEventComponent implements OnInit {
 
-  formSignUp: FormGroup;
+  formSignUp: UntypedFormGroup;
 
   inscriptionTypes: Array<string> = ['Squadra', 'Free agent'];
   inscriptionTeam: boolean = false;
@@ -32,38 +32,38 @@ export class SignUpToEventComponent implements OnInit {
   private newAttribute: any = {};
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: UntypedFormBuilder
   ) {
 
     this.formSignUp = this.formBuilder.group({
 
-      EventSelected: new FormControl('', Validators.required),
-      InscriptionType:  new FormControl('', Validators.required),
+      EventSelected: new UntypedFormControl('', Validators.required),
+      InscriptionType:  new UntypedFormControl('', Validators.required),
 
-      TeamName: new FormControl('', Validators.required),
-      TeamSize: new FormControl('5', Validators.required),
+      TeamName: new UntypedFormControl('', Validators.required),
+      TeamSize: new UntypedFormControl('5', Validators.required),
 
-      LeaderName: new FormControl('', Validators.required),
-      LeaderRank: new FormControl('', Validators.required),
+      LeaderName: new UntypedFormControl('', Validators.required),
+      LeaderRank: new UntypedFormControl('', Validators.required),
 
-      Player2Name: new FormControl('', Validators.required),
-      Player2Rank: new FormControl('', Validators.required),
+      Player2Name: new UntypedFormControl('', Validators.required),
+      Player2Rank: new UntypedFormControl('', Validators.required),
 
-      Player3Name: new FormControl('', Validators.required),
-      Player3Rank: new FormControl('', Validators.required),
+      Player3Name: new UntypedFormControl('', Validators.required),
+      Player3Rank: new UntypedFormControl('', Validators.required),
 
-      Player4Name: new FormControl('', Validators.required),
-      Player4Rank: new FormControl('', Validators.required),
+      Player4Name: new UntypedFormControl('', Validators.required),
+      Player4Rank: new UntypedFormControl('', Validators.required),
 
-      Player5Name: new FormControl('', Validators.required),
-      Player5Rank: new FormControl('', Validators.required),
+      Player5Name: new UntypedFormControl('', Validators.required),
+      Player5Rank: new UntypedFormControl('', Validators.required),
 
-      Message: new FormControl(''),
+      Message: new UntypedFormControl(''),
 
-      AgentName: new FormControl('', Validators.required),
-      AgentRank: new FormControl('', Validators.required),
-      AgentRole1: new FormControl('', Validators.required),
-      AgentRole2: new FormControl(''),
+      AgentName: new UntypedFormControl('', Validators.required),
+      AgentRank: new UntypedFormControl('', Validators.required),
+      AgentRole1: new UntypedFormControl('', Validators.required),
+      AgentRole2: new UntypedFormControl(''),
 
     });
 

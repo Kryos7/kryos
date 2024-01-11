@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import * as ApexCharts from 'apexcharts';
 import { LeaderInterface } from 'src/app/e_core/classes/leader-interface';
 import { SelectedItemsInterface } from 'src/app/e_core/classes/selected-items-interface';
@@ -67,12 +67,12 @@ export class PieChartOpComponent implements AfterViewInit {
 
   leaders: LeaderInterface[] = LEADERS;
   selected: SelectedItemsInterface[] = [];
-  form: FormGroup;
+  form: UntypedFormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.form = this.formBuilder.group({
-      leader: new FormControl(null, [Validators.required]),
-      nUtilizzi: new FormControl(null, [Validators.required]),
+      leader: new UntypedFormControl(null, [Validators.required]),
+      nUtilizzi: new UntypedFormControl(null, [Validators.required]),
     });
   }
 
