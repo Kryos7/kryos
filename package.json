@@ -30,6 +30,7 @@
     "bootstrap": "^4.6.0",
     "ng-dynamic-breadcrumb": "^5.0.1",
     "ngx-countdown": "^11.0.3",
+    "punycode": "^2.3.1",
     "rxjs": "~6.6.0",
     "tournament-organizer": "^3.3.0",
     "tslib": "^2.0.0",
