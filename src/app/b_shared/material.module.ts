@@ -10,7 +10,8 @@ import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatLegacySelectModule as MatSelectModule } from '@angular/material/legacy-select';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFileUploadModule } from 'angular-material-fileupload';
+
+// import { MatFileUploadModule } from 'angular-material-fileupload';
 
 @NgModule({
   imports: [
@@ -24,10 +25,10 @@ import { MatFileUploadModule } from 'angular-material-fileupload';
     MatNativeDateModule,
     MatSelectModule,
     MatToolbarModule,
-    MatFileUploadModule
+    // MatFileUploadModule
   ],
   declarations: [
-    
+
   ],
   exports: [
     MatAutocompleteModule,
@@ -39,7 +40,7 @@ import { MatFileUploadModule } from 'angular-material-fileupload';
     MatNativeDateModule,
     MatSelectModule,
     MatToolbarModule,
-    MatFileUploadModule
+    // MatFileUploadModule
   ]
 })
 export class MaterialModule { }

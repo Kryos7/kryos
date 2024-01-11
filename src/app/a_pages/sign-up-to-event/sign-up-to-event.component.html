@@ -57,17 +57,17 @@
               </mat-select>
             </mat-form-field>
 
-            <div class="logoUpload col-6 float-left">
-              <label for="singleFile">Carica il logo della squadra</label>
-              <input id="singleFile" type="file" [fileUploadInputFor]="FileUploadQueue" />
-            </div>
+<!--            <div class="logoUpload col-6 float-left">-->
+<!--              <label for="singleFile">Carica il logo della squadra</label>-->
+<!--              <input id="singleFile" type="file" [fileUploadInputFor]="FileUploadQueue" />-->
+<!--            </div>-->
 
-            <mat-file-upload-queue #FileUploadQueue [fileAlias]="'file'"
-              [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'">
+<!--            <mat-file-upload-queue #FileUploadQueue [fileAlias]="'file'"-->
+<!--              [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'">-->
 
-              <mat-file-upload [file]="file" [id]="i" *ngFor="let file of FileUploadQueue.files; let i = index">
-              </mat-file-upload>
-            </mat-file-upload-queue>
+<!--              <mat-file-upload [file]="file" [id]="i" *ngFor="let file of FileUploadQueue.files; let i = index">-->
+<!--              </mat-file-upload>-->
+<!--            </mat-file-upload-queue>-->
 
           </div>
 

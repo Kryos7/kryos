@@ -17,7 +17,7 @@
           <ng-container *xngBreadcrumbItem="let breadcrumb; let info = info; let first = first">
 
             <ng-container *ngIf="info">
-              <fa-icon [icon]="faAngleRight" class="breadcrumbArrow">{{ info }}</fa-icon>
+<!--              <fa-icon [icon]="faAngleRight" class="breadcrumbArrow">{{ info }}</fa-icon>-->
             </ng-container>
 
             <ng-container *ngIf="!first">
@@ -42,35 +42,35 @@
 
             <div class="submenuCntr">
               <a class="hasSubmenu" mat-button [routerLink]="'/'"> Weekly Cup </a>
-              <div class="submenu">
-                <a [routerLink]="['regolamento', 'nexus-conflict']" class="col-12">
-                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento
-                </a>
-                <a [routerLink]="['squadre', 'nexus-conflict']" class="col-12">
-                  <fa-icon [icon]="faUsers"></fa-icon> Sala dei Re
-                </a>
-                <a [routerLink]="['edizioni-passate', 'nexus-conflict']" class="col-12">
-                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate
-                </a>
-              </div>
+<!--              <div class="submenu">-->
+<!--                <a [routerLink]="['regolamento', 'nexus-conflict']" class="col-12">-->
+<!--                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento-->
+<!--                </a>-->
+<!--                <a [routerLink]="['squadre', 'nexus-conflict']" class="col-12">-->
+<!--                  <fa-icon [icon]="faUsers"></fa-icon> Sala dei Re-->
+<!--                </a>-->
+<!--                <a [routerLink]="['edizioni-passate', 'nexus-conflict']" class="col-12">-->
+<!--                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate-->
+<!--                </a>-->
+<!--              </div>-->
             </div>
 
             <div class="submenuCntr">
               <a class="hasSubmenu" mat-button [routerLink]="'/'"> Team League </a>
-              <div class="submenu">
-                <a [routerLink]="['regolamento', 'elo-championship-heroes']" class="col-12">
-                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento
-                </a>
-                <a [routerLink]="['classifica', 'elo-championship-heroes']" class="col-12">
-                  <fa-icon [icon]="faTable"></fa-icon> Classifica
-                </a>
-                <a [routerLink]="['squadre', 'elo-championship-heroes']" class="col-12">
-                  <fa-icon [icon]="faUsers"></fa-icon> Squadre
-                </a>
-                <a [routerLink]="['edizioni-passate', 'elo-championship-heroes']" class="col-12">
-                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate
-                </a>
-              </div>
+<!--              <div class="submenu">-->
+<!--                <a [routerLink]="['regolamento', 'elo-championship-heroes']" class="col-12">-->
+<!--                  <fa-icon [icon]="faInfoCircle"></fa-icon> Regolamento-->
+<!--                </a>-->
+<!--                <a [routerLink]="['classifica', 'elo-championship-heroes']" class="col-12">-->
+<!--                  <fa-icon [icon]="faTable"></fa-icon> Classifica-->
+<!--                </a>-->
+<!--                <a [routerLink]="['squadre', 'elo-championship-heroes']" class="col-12">-->
+<!--                  <fa-icon [icon]="faUsers"></fa-icon> Squadre-->
+<!--                </a>-->
+<!--                <a [routerLink]="['edizioni-passate', 'elo-championship-heroes']" class="col-12">-->
+<!--                  <fa-icon [icon]="faHistory"></fa-icon> Edizioni passate-->
+<!--                </a>-->
+<!--              </div>-->
             </div>
 
             <!-- <a mat-button [routerLink]="['iscriviti']"> Iscriviti </a> -->

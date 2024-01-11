@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { faDiscord, faFacebookF, faInstagram, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { faDiscord, faFacebookF, faInstagram, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +9,11 @@ import { faDiscord, faFacebookF, faInstagram, faTwitch, faYoutube } from '@forta
 })
 export class HeaderComponent implements OnInit {
 
-  faFacebook = faFacebookF;
-  faTwitch = faTwitch;
-  faInstagram = faInstagram;
-  faYoutube = faYoutube;
-  faDiscord = faDiscord;
+  // faFacebook = faFacebookF;
+  // faTwitch = faTwitch;
+  // faInstagram = faInstagram;
+  // faYoutube = faYoutube;
+  // faDiscord = faDiscord;
 
   constructor() { }
 

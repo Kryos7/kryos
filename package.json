@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -21,20 +22,19 @@
     "@angular/platform-browser": "^17.0.9",
     "@angular/platform-browser-dynamic": "^17.0.9",
     "@angular/router": "^17.0.9",
-    "@fortawesome/angular-fontawesome": "^0.8.2",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "angular-material-fileupload": "^3.0.2",
     "apexcharts": "^3.45.1",
     "bootstrap": "^4.6.0",
     "ng-dynamic-breadcrumb": "^5.0.1",
-    "ngx-countdown": "^11.0.3",
+    "ngx-countdown": "^17.1.1",
     "punycode": "^2.3.1",
     "rxjs": "~6.6.0",
     "tournament-organizer": "^3.3.0",
     "tslib": "^2.0.0",
-    "xng-breadcrumb": "^6.6.1",
+    "xng-breadcrumb": "10.0.2",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
